@@ -1,11 +1,14 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 #top-menu {
     margin: 20px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 #menu-grid {
@@ -38,15 +41,17 @@ body {
 }
 
 #login-button {
-    height: 30px;
-    background-color: #4285f4;
+    height: 35px;
+    width: 100px;
+    background-color: #1C71E5;
     color: white;
     border: none;
+    border-radius: 4px;
     text-decoration: solid;
+    font-size: 14px;
 }
 
 #mid {
-    margin-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +59,7 @@ body {
 
 #mid-grid {
     display: grid;
-    grid-template-rows: 100px repeat(4, 50px);
+    grid-template-rows: 100px repeat(3, 50px);
     grid-row-gap: 15px;
     justify-items: center;
     /* background-color: lightgrey; */
@@ -77,26 +82,86 @@ body {
 #zoekbalk {
     width: 400px;
     height: 40px;
-    margin-right: 20px;
-    margin-left: 3px;
+    margin-right: auto;
+    margin-left: auto;
     border: none;
 }
 
 .mid-button {
     margin: 3px;
+    padding: 0px 15px 0px 15px;
     height: 35px;
-    background-color: ##f7f7f7;
+    background-color: #f7f7f7;
     border: none;
 }
 
-p {
+#taal {
     font-size: 12px;
+    text-align: center;
+    text-decoration: none;   
 }
 
-#safe-day {
-    background-color: red;
-    width: 500px;
-    /* display: flex;
-    align-items: center; */
-    text-align: center;
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#bottom-balk {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+}
+
+#nl {
+    margin-left: 20px;
+    color: #6F6F6F;
+    font-size: 14px;
+}
+
+#line {
+    height: 1px;
+    width: 100%;
+    background-color: #DADCE0;
+}
+.footer {
+    height: auto;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+#bottom-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    grid-column-gap: 10px;
+}
+
+#bottom-menu-left {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 50px;
+    align-items: center;
+    justify-content: left;
+    grid-column-gap: 30px;
+    margin-left: 20px;
+}
+#bottom-menu-right {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px;
+    align-items: center;
+    justify-content: right;
+    grid-column-gap: 30px;
+    margin-right: 20px;
+}
+.bottom-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #6F6F6F;
+    padding: 0px;
 }
